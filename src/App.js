@@ -1,15 +1,14 @@
-import { Route } from 'react-router-dom';
-import PostListPage from './pages/PostListPage'
-import LoginPage from './pages/LoginPage'
-import RegisterPage from './pages/RegisterPage'
-import WritePage from './pages/WritePage'
-import PostPage from './pages/PostPage'
+import { Route } from "react-router-dom";
+import PostListPage from "./pages/PostListPage";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+import WritePage from "./pages/WritePage";
+import PostPage from "./pages/PostPage";
 
 function App() {
   return (
     <div className="App">
-      <Route component={PostListPage} path={['/@:username', '/']} exact></Route>
-      <Route component={PostListPage} path={'/:user'}></Route>
+      <Route component={PostListPage} path={["/@:username", "/"]} exact></Route>
       <Route component={LoginPage} path="/login"></Route>
       <Route component={RegisterPage} path="/register"></Route>
       <Route component={WritePage} path="/write"></Route>
@@ -17,7 +16,6 @@ function App() {
       {/* <Header>
       </Header> */}
       {/* <Content></Content> */}
-
     </div>
   );
 }
